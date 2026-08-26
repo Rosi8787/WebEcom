@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -10,6 +11,9 @@ export default function Home() {
           <a href="#features" className="hover:text-blue-600 transition">Fitur</a>
           <a href="#about" className="hover:text-blue-600 transition">Tentang</a>
           <a href="#contact" className="hover:text-blue-600 transition">Kontak</a>
+          <Link href="/login" className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-4 py-2 rounded-lg transition shadow-sm text-xs">
+            Masuk
+          </Link>
         </nav>
       </header>
 
@@ -25,9 +29,9 @@ export default function Home() {
           Website ini dibangun menggunakan Next.js dan Tailwind CSS untuk tampilan yang bersih, responsif, dan performa tinggi.
         </p>
         <div className="flex gap-4">
-          <button className="bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-3 rounded-lg shadow-md transition">
+          <Link href="/login" className="bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-3 rounded-lg shadow-md transition">
             Mulai Sekarang
-          </button>
+          </Link>
           <button className="bg-white hover:bg-slate-100 text-slate-700 border border-slate-300 font-medium px-6 py-3 rounded-lg transition">
             Pelajari Lebih Lanjut
           </button>
